@@ -2,6 +2,7 @@ const express = require('express');
 
 const router = new express.Router();
 
-router.use('/bb', require('./bb'));
+router.use('/clients', require('./clients'));
+router.use('/properties', require('./properties'));
 
 module.exports = router;
