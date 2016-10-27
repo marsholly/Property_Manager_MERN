@@ -22,7 +22,6 @@ export default function Layout(props) {
             </button>
             <Link to="/" className="navbar-brand" >BMA</Link>
           </div>
-
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <form className="navbar-form navbar-left">
               <div className="input-group">
@@ -46,7 +45,7 @@ export default function Layout(props) {
                   <span className="caret" />
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link to="/">New Client</Link></li>
+                  <li><Link to="/newClient">New Client</Link></li>
                   <li><Link to="/">Manage Clients</Link></li>
                 </ul>
               </li>

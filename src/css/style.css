@@ -1,0 +1,23 @@
+.starNotation{
+  color: red;
+  margin-right: 487px;
+}
+
+h5 {
+  margin-left: 16px;
+}
+
+.register {
+  border: 1px solid #696;padding: 60px 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: #666 0px 0px 10px;
+  -moz-box-shadow: #666 0px 0px 10px;
+  box-shadow: #666 0px 0px 10px;background: #EAFAF1;
+}
+
+h3 {
+  margin-left: 16px;
+  margin-top: -20px;
+}
