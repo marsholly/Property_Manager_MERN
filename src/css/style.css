@@ -8,16 +8,55 @@ h5 {
 }
 
 .register {
-  border: 1px solid #696;padding: 60px 0;
+  border: 1px solid #696;
+  padding: 60px 0;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   -webkit-box-shadow: #666 0px 0px 10px;
   -moz-box-shadow: #666 0px 0px 10px;
-  box-shadow: #666 0px 0px 10px;background: #EAFAF1;
+  box-shadow: #666 0px 0px 10px;
+  background: #EAFAF1;
 }
 
 h3 {
   margin-left: 16px;
   margin-top: -20px;
 }
+
+.modalSize {
+  height: 370px;
+}
+
+.modalContent{
+  height:280px;
+}
+
+.proptyForm{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.propty {
+  border: 1px solid #696;
+  padding: 60px 0;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: #666 0px 0px 10px;
+  -moz-box-shadow: #666 0px 0px 10px;
+  box-shadow: #666 0px 0px 10px;
+  background: #b3e6ff;
+}
+
+div.ui.input > input {
+  text-align: right;
+}
+
+ .form.proptyForm {
+   font-size: 1em;
+ }
+
+ .radio.checkbox > label {
+   font-size: 1.2em;
+ }

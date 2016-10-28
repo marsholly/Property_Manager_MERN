@@ -13,6 +13,18 @@ const ServerActions = {
       payload: { client },
     });
   },
+  receiveAllProperties(properties) {
+    AppDispatcher.dispatch({
+      type: 'RECEIVE_ALL_PROPERTIES',
+      payload: { properties },
+    });
+  },
+  receiveOneProperty(property) {
+    AppDispatcher.dispatch({
+      type: 'RECEIVE_ONE_PROPERTY',
+      payload: { property },
+    });
+  },
 };
 
 export default ServerActions;

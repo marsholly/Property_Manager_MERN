@@ -46,7 +46,7 @@ export default function Layout(props) {
                 </Link>
                 <ul className="dropdown-menu">
                   <li><Link to="/newClient">New Client</Link></li>
-                  <li><Link to="/">Manage Clients</Link></li>
+                  <li><Link to="/clientList">Manage Clients</Link></li>
                 </ul>
               </li>
               <li className="dropdown">
@@ -62,8 +62,8 @@ export default function Layout(props) {
                   <span className="caret" />
                 </Link>
                 <ul className="dropdown-menu">
-                  <li><Link to="/">New Property</Link></li>
-                  <li><Link to="/">Manage Properties</Link></li>
+                  <li><Link to="/newProperty">New Property</Link></li>
+                  <li><Link to="/propertyList">Manage Properties</Link></li>
                   <li role="separator" className="divider" />
                   <li><Link to="/">Rental</Link></li>
                   <li><Link to="/">Withdrawal</Link></li>

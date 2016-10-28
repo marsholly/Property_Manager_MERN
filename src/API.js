@@ -32,6 +32,36 @@ const API = {
       .then(this.getAllClients())
       .catch(console.error);
   },
+  getAllProperties() {
+    axios.get('/api/properties/')
+      .then(res => res.data)
+      .then(ServerActions.receiveAllProperties)
+      .catch(console.error);
+  },
+  createNewProperty(newProperty) {
+    axios.post('/api/properties/', newProperty)
+      .then(res => res.data)
+      .then(this.getAllProperties())
+      .catch(console.error);
+  },
+  getOneProperty(id) {
+    axios.get(`/api/properties/${id}`)
+      .then(res => res.data)
+      .then(ServerActions.receiveOneProperty)
+      .catch(console.error);
+  },
+  removeProperty(id) {
+    axios.delete(`/api/properties/${id}`)
+      .then(res => res.data)
+      .then(this.getAllProperties())
+      .catch(console.error);
+  },
+  updateProperty(id, newInfo) {
+    axios.put(`/api/properties/${id}`, newInfo)
+      .then(res => res.data)
+      .then(this.getAllProperties())
+      .catch(console.error);
+  },
 };
 
 export default API;

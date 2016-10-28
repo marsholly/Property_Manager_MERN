@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { browserHistory } from 'react-router';
 import ClientActions from '../actions/ClientActions';
 
 export default class NewClient extends Component {
@@ -26,7 +27,7 @@ export default class NewClient extends Component {
       phone,
     };
     ClientActions.createNewClient(newClient);
-    
+    browserHistory.push({ pathname: '/' });
   }
 
   render() {
