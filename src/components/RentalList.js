@@ -5,7 +5,7 @@ import PropertyActions from '../actions/PropertyActions';
 import PropertyStore from '../stores/PropertyStore';
 
 
-export default class PropertyList extends Component {
+export default class RentalList extends Component {
   constructor() {
     super();
     this.state = {
@@ -37,11 +37,13 @@ export default class PropertyList extends Component {
          rentPrice, numberOfRooms, numberOfBathrooms, petsAllowed } = property;
         const extra = (
           <div className="text-center">
-            <Button.Group size="big">
-              <Button color="red">Delete</Button>
-              <Button.Or />
-              <Button positive>Edit</Button>
-            </Button.Group>
+            <Button
+              size="big"
+              color="pink"
+              content="Like"
+              icon="heart"
+              label={{ basic: true, color: 'red', pointing: 'left', content: 'rent it' }}
+            />
           </div>
          );
         return (

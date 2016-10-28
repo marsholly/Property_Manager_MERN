@@ -9,6 +9,7 @@ import NewClient from './components/NewClient';
 import ClientsList from './components/ClientsList';
 import NewProperty from './components/NewProperty';
 import PropertyList from './components/PropertyList';
+import RentalList from './components/RentalList';
 
 render(
   <Router history={browserHistory}>
@@ -18,6 +19,7 @@ render(
       <Route path="clientList" component={ClientsList} />
       <Route path="newProperty" component={NewProperty} />
       <Route path="propertyList" component={PropertyList} />
+      <Route path="rental" component={RentalList} />
     </Route>
   </Router>,
   document.getElementById('root')

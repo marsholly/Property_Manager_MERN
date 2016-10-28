@@ -53,10 +53,14 @@ div.ui.input > input {
   text-align: right;
 }
 
- .form.proptyForm {
+.form.proptyForm {
    font-size: 1em;
- }
+}
 
- .radio.checkbox > label {
+.radio.checkbox > label {
    font-size: 1.2em;
- }
+}
+
+.labelInfo{
+   margin-top: 10px;
+}

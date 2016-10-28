@@ -65,7 +65,7 @@ export default function Layout(props) {
                   <li><Link to="/newProperty">New Property</Link></li>
                   <li><Link to="/propertyList">Manage Properties</Link></li>
                   <li role="separator" className="divider" />
-                  <li><Link to="/">Rental</Link></li>
+                  <li><Link to="/rental">Rental</Link></li>
                   <li><Link to="/">Withdrawal</Link></li>
                 </ul>
               </li>

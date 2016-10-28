@@ -7,6 +7,7 @@ const Property = require('../models/property');
 router.route('/')
   .get((req, res) => {
     Property.find({})
+      .limit(20)
       .populate('customers').exec()
       .then(properties => res.send(properties))
       .catch(err => res.status(400).send(err));
